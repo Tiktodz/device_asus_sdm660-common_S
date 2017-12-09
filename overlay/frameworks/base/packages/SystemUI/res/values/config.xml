@@ -52,4 +52,10 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
          should be shown in a notification. If we cannot show at least this many replies we instead
          show none. -->
     <integer name="config_smart_replies_in_notifications_min_num_system_generated_replies">1</integer>
+
+    <!-- If true, enable the advance anti-falsing classifier on the lockscreen. On some devices it
+         does not work well, particularly with noisy touchscreens. Note that disabling it may
+         increase the rate of unintentional unlocks. -->
+    <bool name="config_lockscreenAntiFalsingClassifierEnabled">false</bool>
+
 </resources>
