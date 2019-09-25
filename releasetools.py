@@ -35,3 +35,17 @@ def AddModemAssertion(info):
       cmd = 'assert(asus.verify_modem("' + version + '") == "1");'
       info.script.AppendExtra(cmd)
   return
+
+def FullOTA_InstallEnd(info):
+  info.script.AppendExtra('ifelse(is_mounted("/system"), unmount("/system"));');
+  info.script.AppendExtra('ifelse(is_mounted("/vendor"), unmount("/vendor"));');
+  info.script.Mount("/system")
+  info.script.Mount("/vendor")
+  RunCustomScript(info, "device_check.sh", "")
+  info.script.Unmount("/system")
+  info.script.Unmount("/vendor")
+  return
+
+def RunCustomScript(info, name, arg):
+  info.script.AppendExtra(('run_program("/tmp/install/bin/%s", "%s");' % (name, arg)))
+  return
