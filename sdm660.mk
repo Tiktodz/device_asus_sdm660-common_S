@@ -224,6 +224,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.livedisplay@2.0-service-sdm
 
+# Manifest replacement for non NFC variant
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/etc/device_check.sh:install/bin/device_check.sh
+
 # Media
 PRODUCT_PACKAGES += \
     android.hardware.media.omx@1.0-impl
