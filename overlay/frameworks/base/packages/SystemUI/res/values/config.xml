@@ -58,4 +58,8 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
          increase the rate of unintentional unlocks. -->
     <bool name="config_lockscreenAntiFalsingClassifierEnabled">false</bool>
 
+    <!-- Max visible notification icons -->
+    <integer name="config_maxVisibleNotificationIcons">9</integer>
+    <integer name="config_maxVisibleNotificationIconsWhenDark">9</integer>
+
 </resources>
