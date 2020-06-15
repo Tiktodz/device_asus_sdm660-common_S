@@ -44,4 +44,12 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
     <!-- Doze: pulse parameter - delay to wait for the screen to wake up after an intent -->
     <integer name="doze_pulse_delay_in_intent">0</integer>
+
+    <!-- Smart replies in notifications: Whether we disable the feature unless the app targets P -->
+    <bool name="config_smart_replies_in_notifications_requires_targeting_p">false</bool>
+
+    <!-- Smart replies in notifications: Minimum number of system generated smart replies that
+         should be shown in a notification. If we cannot show at least this many replies we instead
+         show none. -->
+    <integer name="config_smart_replies_in_notifications_min_num_system_generated_replies">1</integer>
 </resources>
