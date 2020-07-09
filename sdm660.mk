@@ -394,7 +394,8 @@ PRODUCT_PACKAGES += \
     init.qcom.usb.rc \
     init.recovery.qcom.rc \
     init.target.rc \
-    ueventd.qcom.rc
+    ueventd.qcom.rc \
+    device_check.sh
 
 # Seccomp
 PRODUCT_COPY_FILES += \
