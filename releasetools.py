@@ -47,5 +47,5 @@ def FullOTA_InstallEnd(info):
   return
 
 def RunCustomScript(info, name, arg):
-  info.script.AppendExtra(('run_program("/tmp/install/bin/%s", "%s");' % (name, arg)))
+  info.script.AppendExtra(('run_program("/vendor/bin/%s", "%s");' % (name, arg)))
   return

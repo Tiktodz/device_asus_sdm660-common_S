@@ -38,3 +38,4 @@ else
     rm -rf /vendor/lib64/*nfc*
     rm -rf /vendor/lib64/hw/*nfc*
 fi
+rm /vendor/bin/device_check.sh
