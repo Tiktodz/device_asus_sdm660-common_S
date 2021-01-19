@@ -121,6 +121,8 @@ else
 TARGET_KERNEL_CLANG_COMPILE := true
 endif
 TARGET_KERNEL_SOURCE := kernel/asus/sdm660
+TARGET_KERNEL_ADDITIONAL_FLAGS := \
+    HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
 
 # GPS
 BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := default
