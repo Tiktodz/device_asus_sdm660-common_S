@@ -86,6 +86,7 @@ debug.sf.early_gl_app_phase_offset_ns=15000000
 ro.hardware.egl=adreno
 ro.hardware.vulkan=sdm660
 ro.surface_flinger.max_frame_buffer_acquired_buffers=3
+debug.cpurend.vsync=false
 
 # NTP Server
 persist.backup.ntpServer=0.pool.ntp.org
