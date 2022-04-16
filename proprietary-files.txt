@@ -596,6 +596,7 @@ vendor/bin/thermal-engine
 vendor/lib/libthermalclient.so
 vendor/lib64/libthermalclient.so
 vendor/lib64/libthermalioctl.so
+vendor/etc/thermal-engine-youtube.conf
 
 # TUI
 vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti
