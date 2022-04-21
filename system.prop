@@ -59,6 +59,9 @@ persist.backup.ntpServer="0.pool.ntp.org"
 # QC framework value-adds
 ro.vendor.qti.va_aosp.support=1
 
+# Remove GBoard Spacing
+ro.com.google.ime.kb_pad_port_b=1
+
 # RIL
 DEVICE_PROVISIONED=1
 persist.radio.VT_CAM_INTERFACE=2
