@@ -95,8 +95,7 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    Snap \
-    Youtube
+    Snap
 
 PRODUCT_PACKAGES += \
     android.hardware.camera.common@1.0 \
