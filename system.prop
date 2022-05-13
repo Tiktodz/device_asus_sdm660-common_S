@@ -2,6 +2,15 @@
 # system.prop for sdm660
 #
 
+# Battery Efficiency
+ro.ril.disable.power.collapse=0
+ro.ril.power_collapse=1
+power_supply.wakeup=enable
+profiler.force_disable_ulog=true
+profiler.force_disable_err_rpt=true
+profiler.force_disable_err_rpt=1
+profiler.force_disable_ulog=1
+
 # Bluetooth
 bt.max.hfpclient.connections=1
 vendor.bluetooth.soc=cherokee
