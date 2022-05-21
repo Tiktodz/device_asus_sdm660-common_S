@@ -29,7 +29,7 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@2.0-service \
     android.hardware.audio.effect@4.0-impl \
     android.hardware.audio.effect@2.0-service \
-	
+
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
     audio.bluetooth.default \
@@ -418,6 +418,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_SYSTEM_VERITY_PARTITION=/dev/block/bootdevice/by-name/system
 PRODUCT_VENDOR_VERITY_PARTITION=/dev/block/bootdevice/by-name/vendor
 $(call inherit-product, build/target/product/verity.mk)
+
+# Sqlite
+PRODUCT_PACKAGES += \
+    sqlite3
 
 # Thermal
 PRODUCT_PACKAGES += \
